@@ -18,4 +18,4 @@
 <head> ~ </head> : <title>, <meta>와 같은 웹페이지를 설명해주는 것을 묶어 놓은 것
 <body> ~ </body> : 웹 페이지 안에 본문 내용들을 묶어 놓은 것
 <html> ~ </html> : <head>와 <body>를 모두 묶는 것. 시작과 끝
-<!doctype html> : '이 문서는 html이다.' 라는 뜻으로 맨위에 적어준다.
+<!doctype html> : '이 문서는 html이다.' 라는 뜻으로 맨위에 적어준  다.
