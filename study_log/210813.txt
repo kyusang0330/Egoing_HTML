@@ -1,7 +1,7 @@
 1. 윈도우에 웹서버 설치
 * 아파치(Apache) 설치
 1) bitnami wamp stack 검색
-2) bitnami 들어가서  WAMP 다운로드 
+2) bitnami 들어가서  WAMP    다운로드 
 3) 다운로드 완료 후 manager_window가 설치된 것을 확인
 - apache2 폴더 -> htdocs 폴더 확인
 
@@ -11,7 +11,7 @@ index.html-> Web Brower 이렇게 연결되면 file:// 로 표시된다.
 
 http : Hyper Text Transfer Protocol
 
-3. 웹브라우저와 웹 서버 통신
+3. 웹 브라우저와 웹 서버 통신
 - 컴퓨터의 인터넷 연결하는 곳에 우클릭 후 네트워크 및 인터넷 설정을 들어간 후
 어댑터 옵션 변경 클릭 -> 이더넷 -> 자세히 클릭 -> IPv4 주소 확인
 이것이 자신의 컴퓨터 주소이다.
@@ -39,7 +39,7 @@ http : Hyper Text Transfer Protocol
 3) 설정 버튼 클릭 -> Widget Code를 복사한다
 4) 웹사이트 제일 하단에 붙여넣기.
 
-* 주소가 file://로 되어있다면 자신을 의미하는 127.0.0.1/파일명 을 입력해줘야 한다. 
+* 주소가 file:// 로 되어있다면 자신을 의미하는 127.0.0.1/파일명 을 입력해줘야 한다. 
 
 7.부록 : 코드의 힘 - 방문자 분석기
 
