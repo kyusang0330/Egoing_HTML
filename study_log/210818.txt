@@ -1,0 +1,70 @@
+개발환경 :vscode
+&& <style>태그 안에 사용 하는 것들
+
+1. border - 테두리를 만들때 사용
+border -width:숫자px;  -> 테두리의 두께를 정한다.
+border - color:색;    -> 테두리의 색깔을 결정한다.
+border - style:solid  -> 일반적인 선이라는 뜻이다.
+이것을 간단하게 
+border: 숫자px solid 색; 
+위에 3줄을 1줄로 줄여서 이렇게 표현할 수 있다.
+
+border - 방향(bottom, left, right등등) 이렇게 방향을 정해줄수 있다. 위에 것과 같이 써보면
+border-방향: 숫자px solid 색; 
+이렇게 사용할 수 있다.
+
+
+2. block, inline
+h1은 block level element이고, a 태그는 inline element이다.
+h1 태그에 display:inline;을 써주면 언제든지 inline element가 될수 있고,
+a 태그에 display:block;을 써주면 언제든지 block level element가 될 수 있다.
+* display:none;을 사용하면 사라진다.
+
+3. padding, margin, width
+쉽게 설명하면 margin - border - padding - content(문장) 이렇게 생각하면 된다.
+width는 전첵적인 폭이라고 생각하면 된다.
+
+4. grid(그리드)
+<div>~</div>태그 - 디자인의 용도로만 쓰는 태그. block level element이다.
+<span>~<span> 태그- 디자인의 용도로만 쓰는 태그. inline element이다.
+둘다 여러개 사용해도 상관없다.
+예시)
+<div id="grid">
+    <div>NAVIGATION</div> 
+    <div>ARTICLE</div>
+</div>
+--------------------------------------------------------------------------------------
+#grid{
+    border:5px solid pink;
+    display:grid;
+    grid-template-columns: 150px 1fr
+}
+grid-template-columns는 페이지분할의 크기를 설정할 때 사용한다. 위처럼 150px 1fr이면
+왼쪽은 150px고정이고 오른쪽은 1fr로 나머지 부분이 모두 오른쪽입니다.
+2fr 1fr이면 왼쪽은 페이지의 3분의 2를 차지하고 오른쪽은 3분의 1을 차지합니다.
+
+* 추천 사이트 : caniuse.com
+
+5.반응형 디자인
+@media(min (or max)-width:숫자px) {
+
+}
+페이지의 넓이가 숫자px보다 적으면 적용한다.
+예시)
+@media(min-width:800px) {
+div{
+    display:none;
+}
+}                     --> 이것은 페이지의 넓이가 800보다 작으면 안보이게 해라. 라는 뜻
+
+6. <style> 태그를 많은 html에 한번에 사용하는 방법
+
+1) 따로 '파일명.css'를 만들어서 <style>안에 있는 내용만 넣는다. (<style>~</style>은 지워야 한다.)
+2) 원래 style 태그가 있는 자리에 
+<link rel="stylesheet" href="파일명.css">를 써주면 된다. 
+
+
+
+
+
+
