@@ -1,0 +1,27 @@
+개발환경: vscode
+
+<<html 태그>>
+1.표 table 태그
+<table border = "크기">
+    <tr>
+        <td>이름</td> <td>성별</td> <td>주소</td>
+    </tr>
+: border는 테두리의 크기를 뜻한다. 숫자가 커질수록 테두리가 굵어진다.
+<tr>과<td> 태그는 부모태그 자식태그 이렇게 생각하면 된다. <tr> ~ </tr> 안에 있으면
+한줄이라고 생각하고, <td> ~ </td>안에 있으면 한칸이라고 생각하면 된다.
+
+예시- table.html
+
+2.form 태그
+ <form action="링크">
+       <p>아이디: <input type="text" name="id"></p>
+       <p>비밀번호: <input type="password" name="pwd"></p>
+       <p>주소: <input type="text" name="address"></p>
+       <input type="submit">
+    </form>
+: <input type="text">를 사용하면 글이 써지는 네모난 칸이 생긴다.
+<input type="password">를 사용하면 평소에 비밀번호를 사용하는 것처럼 글이 써진다.
+<input type="submit">은 제출이라는 버튼이 생긴다. 이것을 눌러 <action="링크"> 여기에
+써있는 링크로 전송된다. 저 링크로 전송되었을 때 name="~" ~안에있는 내용으로 링크 전송된다.
+예를 들어 naem="id" 였으면 '링크.id=~' 이런식으로 전송된다.
+
