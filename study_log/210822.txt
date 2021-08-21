@@ -1,0 +1,14 @@
+개발환경 : vscode
+
+1. form 태그 - value
+<form action="링크">
+       <p>text : <input type="text" name="id" value="~"></p>
+       <p>password : <input type="password" name="pwd" value="~"></p>
+       <p>textarea : 
+           <textarea cols="50" rows="2"> ~ </textarea>
+       <input type="submit">
+    </form>
+: value="~" -> ~안에 써있는 문장이 네모칸 안에 바로 출력된다.
+<textarea> ~ </textarea> -> ~안에 있으면 value="~"과 똑같이 네모칸 안에 글이 바로 나타난다.
+cols="크기" -> 네모칸안에 몇 글자를 쓸 수 있는지 정해주는 것이다.
+rows"크기"  -> 몇 줄을 쓸 수 있는지 정해준다.
