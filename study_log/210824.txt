@@ -1,0 +1,101 @@
+개발환경 : vscode
+
+1. form_choice2  (checkbox)
+----------------------------------------------------------------
+<form action="http://localhost/order.php">
+        <p>
+            <h1>색상</h1>
+        붉은색 : <input type="radio" name="color" value="red">
+        검은색 : <input type="radio" name="color" value="black"checked>
+        파란색 : <input type="radio" name="color" value="blue">
+    </p>
+    
+    <p>
+        <h1>사이즈(다중선택)</h1>
+        95 : <input type="checkbox" name="size" value="95">
+        100 : <input type="checkbox" name="size" value="100"checked>
+        105 : <input type="checkbox" name="size" value="105"checked>
+    </p>
+    <input type = "submit">
+</form>
+-----------------------------------------------------------------------
+<input type ="radio"> -> 선택할 수 있는 동그란 원이 생긴다. 'name'을 같은 이름으로 해놓으면
+동시에 선택할 수 없게 한다.
+<input type="checkbox">  -> 네모난 체크박스를 만든다. 'name'을 똑같은 이름으로 지정해두어도 동시에 선택할 수 있다.
+checked  -> 화면에 들어갔을때 체크가 이미되어있게 한다.
+
+
+2. form_button
+---------------------------------------------------------
+<form action="http://localhost/form.php">
+        <input type = "text">
+        <input type = "submit" value="전송">
+        <input type = "button" value="버튼" onclick="alert('hello world')">
+        <input type = "reset">
+----------------------------------------------------------
+'value'로 네모안에 이름을 지정할 수 있다. 
+onclick은 js언어여서 여기서 작동하지 않는다.
+<input type = "reset">   -> 이것을 누르면 입력했던 정보가 초기화된다.
+
+
+
+3.form_hidden
+----------------------------------------------------------
+<form action = "http://localhost/hidden.php">
+            <input type="text" name="id">
+            <input type="hidden" name="hide" value="egoing">
+            <input type="submit">
+        
+        </form>
+----------------------------------------------------------
+ <input type="hidden" name="hide" value="egoing">
+ 이 태그로 인하여 text안에 아무것도 쓰지 않고 제출을 눌러도
+ 'hide=egoing'이 출력된다.
+ (만약 text에 LEE를 쓰고 제출버튼을 눌럿다면 'id=LEE&hide=egoing' 이렇게 나타난다.)
+
+
+
+ 4.form_label
+
+----------------------------------------------------------
+<label>
+       <input type="checkbox" name="color" value="red"> 붉은색
+    </label>
+----------------------------------------------------------
+    <label for="color_blue">
+        <input id="color_blue" type="checkbox" name="color" value="blue"> 파란색
+     </label>
+----------------------------------------------------------
+
+<label for=""> ~~~ </label>
+<input id="" type="">
+이것과
+<label>
+<input type="">
+</label>
+이것은 서로 같은 뜻이다. **  참고 : form_label.html  **
+
+
+
+5. form_method
+
+form_action="링크" method="post, get">
+
+method안에는 post와 get을 사용할 수 있는데 일반적으로 get을 사용하고 있다.
+쉽게 생각하면 post는 비밀스럽고 get은 공개적이다.
+비밀번호같이 유출되면 안되는 정보가 있을때 post를 사용한다.
+
+
+
+6. form_file(파일 업로드)
+
+php와 js를 배워야 확실하게 할 수 있어서 간단하게만 설명받았다.
+----------------------------------------------------------
+<form action="http://localhost/upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="profile">
+        <input type="submit">
+----------------------------------------------------------
+ <input type="file">을 사용하려면 method="POST" enctype="multipart/form-data "  name=" ~~ "
+ 을 꼭 사용해줘야 한다.
+
+
