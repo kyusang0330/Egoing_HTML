@@ -1,0 +1,34 @@
+개발환경 : vscode
+
+1. meta 태그
+
+meta 태그는 기본적으로 그 웹페이지를 설명하는 용으로 사용한다.
+
+기본적인 <meta charset="utf-8"> 이 태그를 가장 많이 쓴다. 
+
+<meta name="~~" content="~~"> 
+이런식으로 사용하고, 저렇게 태그를 사용하여도 웹페이지상에 아무런 변화가 없다.
+그래서 잘 사용하지 않는다.
+
+가장 중요한 것은 
+                       <meta charset="utf-8">
+
+
+2. 의미론적 태그(semantic)
+
+<header> </header> : 웹페이지 상단에 위치하는 정보나 문서를 의미해준다.
+
+<footer> </footer> : 웹페이지 하단에 위치하는 정보나 문서르 의미해준다.
+
+<nav> </nav> : 웹페이지에 목차 같이 페이지를 설명해주는 곳에 써준다.
+
+<article> </article> : 웹페이지에 본문 내용에 사용해준다.
+
+<section> </section> : arcticle태그가 여러 개일때 모든 article태그를 묶어서 사용한다.
+
+<<<참고>>> semantic.html
+
+
+
+
+
