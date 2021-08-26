@@ -1,0 +1,29 @@
+
+1. 검색엔진 최적화
+
+<title>~</title> : 누군가 검색을 하였을 때, 내용을 확실하게 알 수 있도록 중요한 내용을
+title태그 안에 적어 놓는게 좋다. 
+
+<img src="" alt=""> : alt 태그 안에 쓴 것은 사진의 설명이다.
+누군가 검색을 하였을 때 이미지로 인해 찾을 수도 있기 때문에
+사진의 이름을 넣엇다고 생각하면 된다.
+
+
+2. 모바일
+
+head 태그안에 <meta name="viewport" content="width=device-width, initial-scale1.0"> 이것만 넣어주면 된다.
+
+'content="width=device-width, initial-scale1.0' 이것으로 웹페이지의 크기를 조절한다.
+
+3. iframe
+
+<iframe src="iframe_source.html" frameborder="o" sandbox ></iframe>
+
+외부에 있는 문서를 가져올때 사용하는 태그
+
+sandbox는 외부에서 가져온 페이지의 영향을 없애줄 때 사용한다.
+
+
+** iframe_source.html, iframe.html, mobile.html **
+
+
