@@ -1,0 +1,67 @@
+1. video 태그
+<video>
+  <source src="~~" controls>
+</video>
+
+-> src안에 동영상 이름을 넣어주면 된다. 
+controls는 동영상을 재생할 수 있도록 하게한다.
+(loop, autoplay 등 다른 속성들도 있다.)
+controls같은 속성이 없으면 동영상이 이미지처럼 나타난다. 
+
+2. html5의 제출양식
+
+1) input type = "number"
+
+네모칸 안에 숫자만 사용할 수 있다.
+스마트폰으로 웹페이지를 들어갔을 때 숫자패드가 바로 나온다.
+min과 max로 최소와 최대치를 정할 수 있다.
+
+2) input type="date" 
+   input type="month" 
+   input type="week" 
+   input type="time" 
+
+date는 년월일을 나타낼 수 있는 네모칸이 생성되고, 
+month는 년 월만 나타내고, week는 년 주만 나타내고,
+time은 시간만 나타내는 네모칸이 생성된다.
+
+3) input type="search"
+   input type="range"
+
+search는 검색하는 용도로 쓰일 때 사용한다.
+range는 범위는 나타내는 선이 나오는데 min과 max로 조절할 수 있다.
+
+
+3. 입력양식의 속성들
+
+ <input type="text" name="id" placeholder="id를 입력해주세요." autofocus>
+            <input type="password" name="password" autocomplete="off" placeholder="비밀번호를 입력해주세요.">
+
+placeholder를 사용하면 네모칸 안에 희미한 글씨로 ""안에 쓴 글씨가 나오고 다른 텍스트를 입력하면 바로 사라진다.
+
+autocomplete은 말그대로 자동완성인데, on을 해놓으면 자동완성이 되고, off로 해놓으면 자동완성이 꺼진다.
+
+autofocus은 웹페이지를 들어갔을 때 커서가 자동으로 네모칸 안에 있게 하는 것이다.
+
+
+4. 입력 값 체크
+
+ <input type="text" name="id" placeholder="id를 입력해주세요." required pattern="[a-zA-Z].+[0-9]">
+
+required만 사용하였을 때 아무것도 적지 않고 제출하는 것이 안되고 무엇이라도 적고 서버에 보내야한다.
+
+required pattern은 ""안에 규칙을 적어주는 것인데, 영어를 사용하고 싶을 땐 [a-zA-Z]를 사용하면 된다.
+
+대신 저거 하나만 사용하면 영어 1개 밖에 쓰지 못한다. 그래서 .을 붙여서 사용하는데 .하나당 1글자씩 더 쓸수 있다.
+
+이것이 번거로워서 +를 사용하면 무한대로 영어,숫자,특수문자 다 사용할 수 있다.       [a-zA-Z].+
+
+숫자를 사용하고 싶을 땐 [0-9]를 사용하면 된다.
+
+
+
+**   html5_form.html, html5_form_attr.html, html5_form_validation.html **
+
+
+
+
